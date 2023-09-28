@@ -7,7 +7,8 @@ app = Flask(__name__)
 # ruta home
 @app.route('/')
 def index():
-  return render_template('index.html')
+  data = sheet.get_all_records()
+  return render_template('index.html', data=data)
 
 # envia toda la hoja de calculo
 @app.route('/list')

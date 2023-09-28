@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+		<title>Prueba Flask Sheets</title>
+	</head>
+	<body>
+		<div class="d-grid gap-2 d-md-block text-center mt-4">
+			<h1>Lista de Google Sheets</h1>
+			<button class="btn btn-primary mt-4" onclick="currentData()">Actualizar Datos</button>
+		</div>
+		<main class="card card-body m-4">
+				{% block table %} {% endblock %}
+			</div>
+		</main>
+		<script src={{url_for('static', filename='js/index.js')}}></script>
+	</body>
+</html>

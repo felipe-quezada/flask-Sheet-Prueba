@@ -1,0 +1,20 @@
+{% extends "layout.html" %} {% block table %}
+<table class="table">
+	<thead class="table-dark">
+		<th>ID</th>
+		<th>Nombre</th>
+		<th>Edad</th>
+		<th>Profesión</th>
+	</thead>
+  <tbody id="table">
+    {% for item in data %}
+    <tr>
+      <th>{{item.id}}</th>
+      <td>{{item.nombre}}</td>
+      <td>{{item.edad}}</td>
+      <td>{{item.profesion}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock table %}
