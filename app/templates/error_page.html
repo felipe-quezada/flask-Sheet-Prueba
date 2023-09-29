@@ -1,0 +1,18 @@
+{% extends "layout.html" %} {% block button %}
+<button
+	class="w-40 bg-gray-900 hover:bg-gray-700 text-white py-2 px-4 rounded-xl"
+	onclick="reloadPage()"
+>
+	Actualizar Datos
+</button>
+{% endblock button %} {% block main %}
+<div
+	class="flex items-center justify-center rounded-xl w-full h-40 pd-10 text-center text-white bg-gray-500 bg-opacity-25 backdrop-blur-sm"
+>
+	<h1
+		class="text-xl text-white font-semibold font-mono md:text-center md:text-xl"
+	>
+		{{e}}
+	</h1>
+</div>
+{% endblock main %}
