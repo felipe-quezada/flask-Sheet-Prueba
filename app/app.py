@@ -1,4 +1,3 @@
-import sys
 from flask import Flask, render_template, redirect, request
 from sheet_as_db import sheet 
 from werkzeug.exceptions import HTTPException
@@ -37,7 +36,4 @@ def error_page():
   return render_template('error_page.html', e='No se pudo conectar con la hoja de cálculo'), 500
 
 if (__name__ == '__main__'):
-  if (sys.argv.__contains__('debug=True')):
-    app.run(debug=True)
-  else:
-    app.run()
+  app.run()
