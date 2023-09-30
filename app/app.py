@@ -30,7 +30,7 @@ def get_list():
   get_list = sheet.sheet1.get_all_records()
   return get_list
 
-# 
+# renderizado de errores
 @app.route('/error_page')
 def error_page():
   return render_template('error_page.html', e='No se pudo conectar con la hoja de cálculo'), 500

@@ -16,7 +16,7 @@
 			<h1
 				class="text-2xl text-white font-semibold font-mono subpixel-antialiased md:text-center md:text-5xl"
 			>
-				Lista de Google Sheets
+				Google Sheet con Flask
 			</h1>
 			{% block button %}
 			<button
@@ -27,14 +27,11 @@
 			</button>
 			{% endblock button %}
 		</div>
-		<main 
-			class="container mx-auto px-auto flex items-center justify-center mt-10">
-			{% block main %}
-			{% block table %}{% endblock table %}
-			{% endblock main %}
+		<main
+			class="container mx-auto px-auto flex items-center justify-center mt-10"
+		>
+			{% block main %} {% block table %}{% endblock table %} {% endblock main %}
 		</main>
-		<script 
-			src={{url_for('static', filename='js/index.js')}}>
-		</script>
+		<script src={{url_for('static', filename='js/index.js')}}></script>
 	</body>
 </html>
