@@ -24,9 +24,8 @@ _[Este es un enlace](https://flask-sheets-v5um.onrender.com/)_
 
     pip install -r requeriments.txt
 
-Para luego inicializar el proyecto entrando a la carpeta app y escribir el comando de inicialización de Flask en el modo que gustes utilizando el flag [--debug]
+Para luego inicializar el proyecto escribiendo el comando de inicialización de Flask en el modo que gustes utilizando el flag [--debug]
 
-    cd app/
     Flask run <flag>
 
 > # Permisos para editar la hoja de cálculo
