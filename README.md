@@ -3,7 +3,6 @@
 # Tabla de contenido
 
 - [About](#about)
-- [Enlace de aplicación versión desplegada](#enlace-de-aplicación-versión-desplegada)
 - [Pruebas en local](#prueba-aplicación-web-con-google-sheets-y-flask)
 - [Permisos para editar la hoja de cálculo](#permisos-para-editar-la-hoja-de-cálculo)
 - [Aplicación Web en funcionamiento](#aplicación-web-en-funcionamiento)
@@ -11,12 +10,6 @@
 > # About
 >
 > En este proyecto se utiliza Google Sheets como base de datos y Flask para desarrollar una web que muestre y actualice los datos traidos desde la hoja de cálculo.
-
-> # Enlace de aplicación versión desplegada
->
-> Aqui se puede probar la aplicación ya desplegada
-
-_[Este es un enlace](https://www.google.com)_
 
 > # Pruebas en localhost
 >
