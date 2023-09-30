@@ -5,7 +5,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 try: 
   
-  
   KEY =  json.loads(config('KEY'))
   
   SCOPE=['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
@@ -13,10 +12,9 @@ try:
   #autentificando google sheets api
   credentials = ServiceAccountCredentials._from_parsed_json_keyfile(KEY,SCOPE)
   client = gspread.authorize(credentials)
-
+  
   #inicializando hoja de calculo
   sheet = client.open('Flask Sheets').sheet1
-  print(sheet.get_all_records())
   
 except Exception as err:
   print(f"""
