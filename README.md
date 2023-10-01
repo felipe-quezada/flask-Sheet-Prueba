@@ -16,7 +16,7 @@
 >
 > Aqui se puede probar la aplicación ya desplegada
 
-_[Este es un enlace](https://flask-sheets-v5um.onrender.com/)_
+_[Aplicación web Flask + Google Sheets](https://flask-sheets-v5um.onrender.com/)_
 
 > # Pruebas en localhost
 >
